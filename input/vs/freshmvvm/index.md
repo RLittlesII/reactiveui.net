@@ -1,10 +1,7 @@
 Title: FreshMVVM
 ---
 
-* Built-In Navigation Containers
-* Custom Navigation Containers
-* Multiple Navigation Containers
-* Multiple Navigation Stacks
+# FreshMVVM vs ReactiveUI
 
 ## Features
 
@@ -18,4 +15,6 @@ Title: FreshMVVM
 ## Comparison
 
 
-## Can they be used together?
+## Compatability
+
+https://dotnet.libhunt.com/compare-reactiveui-vs-freshmvvm
