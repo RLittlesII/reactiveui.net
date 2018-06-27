@@ -1,6 +1,6 @@
 # Routing in ReactiveUI
 
-    ReactiveUI takes a View Model First approach to navigation.  ReactiveUI considers this navigation event Routing.
+    ReactiveUI takes a View Model First approach to navigation.  ReactiveUI calls this navigation event Routing.
 
 ## `IScreen`
     Your applications implementation of `IScreen` needs
