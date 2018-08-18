@@ -1,7 +1,7 @@
 Title: ReactiveUI
 ---
 
-# [WhenAny](/docs/handbook/when-any)
+# [WhenAny](/docs/handbook/observables/when-any)
 
 # [ReactiveCommand](/docs/handbook/commands/reactive-commands)
 
