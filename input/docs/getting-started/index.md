@@ -7,7 +7,7 @@ A big part of understanding ReactiveUI is understanding Reactive Programming. As
 - Now create a ViewModel that inherits from <a href="https://reactiveui.net/docs/handbook/view-models/">ReactiveObject</a> and replicates your learning from the console app, then plug that into the DataContext of your Xamarin.Forms, UWP or WPF app. Do everything else, for now, exactly how you normally would.
 
 You now know ReactiveUI, but are not yet proficient in expressing yourself in a reactive manner/cleanly.
-Next step is [OAPH](https://reactiveui.net/docs/handbook/oaph/), [WhenAny](https://reactiveui.net/docs/handbook/when-any/), [ReactiveCommand](https://reactiveui.net/docs/handbook/commands/) and [WhenActivated](https://reactiveui.net/docs/handbook/when-activated/).
+Next step is [OAPH](https://reactiveui.net/docs/handbook/oaph/), [WhenAny](https://reactiveui.net/docs/handbook/observables/when-any/), [ReactiveCommand](https://reactiveui.net/docs/handbook/commands/) and [WhenActivated](https://reactiveui.net/docs/handbook/when-activated/).
 
 # Example ViewModel
 
@@ -177,7 +177,7 @@ The ExecuteSearch is basically an asynchronous task, executing in the background
   
 In cases when we don't need to provide for two-way binding between the View and the ViewModel, we can use one of many ReactiveUI Helpers, to notify Observers of a changing read-only value in the ViewModel. We use the <a href="https://reactiveui.net/docs/handbook/oaph/">ObservableAsPropertyHelper</a> twice, once to turn a generic List<T> into an observable read-only collection, and then to change the visibility of an indicator to show that a request is currently executing.
 
-This also works in the opposite direction, when we take the `SearchTerm` property and <a href="https://reactiveui.net/docs/handbook/when-any/">turn it into an observable</a>. This means that we are notified every time a change occurs in the UI. Using Reactive Extensions, we then <a href="http://reactivex.io/documentation/operators/debounce.html">throttle</a> those events, and ensure that the search occurs no sooner than 800ms after the last keystroke. And if at that point the user did not change the last value, or if the search term is blank, we ignore the event completely.
+This also works in the opposite direction, when we take the `SearchTerm` property and <a href="https://reactiveui.net/docs/handbook/observables/when-any/">turn it into an observable</a>. This means that we are notified every time a change occurs in the UI. Using Reactive Extensions, we then <a href="http://reactivex.io/documentation/operators/debounce.html">throttle</a> those events, and ensure that the search occurs no sooner than 800ms after the last keystroke. And if at that point the user did not change the last value, or if the search term is blank, we ignore the event completely.
 
 Using the `IsExecuting` observable of <a href="https://reactiveui.net/docs/handbook/commands/">ReactiveCommand</a>, we derive another 
 observable to change the visibility of the "processing indicator".

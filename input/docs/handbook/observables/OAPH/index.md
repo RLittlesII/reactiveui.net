@@ -1,3 +1,6 @@
+Order: 300
+---
+
 # Overview
 The ObservableAsPropertyHelper, which is often abbreviated OAPH, is a class that will simplify the interop between a IObservable
 and a property on your View Model. It will allow you to have a property which reflects the latest value that has been sent through the 
