@@ -5,6 +5,6 @@ Title: ReactiveUI
 
 # [ReactiveCommand](/docs/handbook/commands/reactive-commands)
 
-# [WhenActivated](/docs/handbook/when-activated)
+# [WhenActivated](/docs/handbook/observables/when-activated)
 
 # [Interactions](/docs/handbook/interactions)
