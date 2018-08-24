@@ -1,4 +1,4 @@
-Title: [Obsolete] ReactiveList
+Title: Obsolete ReactiveList
 ---
 
 One of the built-in classes that ships with ReactiveUI is an improved version of .NET's `ObservableCollection` (which is ironically, *not* an Observable). `ReactiveList` should be used in any place that you would normally use a List or ObservableCollection, as it has additional useful Rx features.
