@@ -55,10 +55,10 @@ someCommand.Execute(Unit.Default).Subscribe();
 
 ## Use Interactions instead of UserError
 
-UserError were replaced by a much more generic mechanism called [Interactions](../interactions/).
+UserError were replaced by a much more generic mechanism called [Interactions](../handbook/interactions/).
 
 ## Use DynamicData instead of ReactiveList
 
 ReactiveList was starting to get rather buggy and a maintenance issue for maintainers.
 
-We decided to recommend [DynamicData](../collections/) as many of the maintainers were already using that library.
+We decided to recommend [DynamicData](../handbook/collections/) as many of the maintainers were already using that library.

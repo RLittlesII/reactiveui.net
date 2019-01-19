@@ -33,11 +33,11 @@ Use your normal Android concepts that you would usually use in Android developme
 - https://reactiveui.net/api/reactiveui.androidsupport/reactiveappcompatactivity_1/
 - https://reactiveui.net/api/reactiveui/reactiveactivity/
 - https://reactiveui.net/api/reactiveui/reactivefragment/
-- https://reactiveui.net/api/reactiveui.android.support/reactiverecyclerviewadapter_1/
+- https://reactiveui.net/api/reactiveui.androidsupport/reactiverecyclerviewviewholder_1/
 - https://reactiveui.net/api/reactiveui.androidsupport/reactiveactionbaractivity
 - https://reactiveui.net/api/reactiveui.androidsupport/reactivefragment/
 - https://reactiveui.net/api/reactiveui.androidsupport/reactivedialogfragment/
-- https://reactiveui.net/api/reactiveui/reactivefragmentactivity/
+- https://reactiveui.net/api/reactiveui.androidsupport/reactivefragmentactivity_1/
 - https://reactiveui.net/api/reactiveui/reactivelistadapter_1/
 - https://reactiveui.net/api/reactiveui/reactivepageradapter_1/
 - https://reactiveui.net/api/reactiveui/reactivepreferencefragment/

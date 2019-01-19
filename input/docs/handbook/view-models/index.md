@@ -39,7 +39,7 @@ Properties that participate in change notification (i.e. that signal when they a
 
 ```cs
 private string name;
-public string Name 
+public string Name
 {
     get => name;
     set => this.RaiseAndSetIfChanged(ref name, value);

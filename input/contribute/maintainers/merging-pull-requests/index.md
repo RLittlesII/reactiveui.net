@@ -1,6 +1,6 @@
 1. Assign one or more labels to categorize what component of ReactiveUI was changed by this unit of work. ![](images/apply-one-or-more-labels.png)
 
-2. Rename the title of the GitHub issue to match [our convention](/contribute/software-style-guide/commit-message-convention). ![](images/rename-the-title.png)
+2. Rename the title of the GitHub issue to match [our convention](/contribute/software-style-guide/commit-message-convention). ![](./images/rename-the-title.png)
 
 Ensure that the merge button is set to `Squash and Merge`, use the little arrow on the right hand side to switch to this mode.
 

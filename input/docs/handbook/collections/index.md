@@ -1,4 +1,4 @@
-ReactiveUI recommends the use of DynamicData framework for collection based operations. DynamicData has replaced internally the use of [ReactiveList](../obsolete/collections)
+ReactiveUI recommends the use of DynamicData framework for collection based operations. DynamicData has replaced internally the use of [ReactiveList](../obsolete/collections/reactive-list.md)
 
 # Overview of Dynamic Data
 

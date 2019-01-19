@@ -26,19 +26,19 @@ In order to use bindings in the View, you must first implement `IViewFor<TViewMo
 
 For a detailed overview of the bindings on each platform, see the following sections:
 
-* [Universal Windows Platform](./windows-store)
+* [Universal Windows Platform](./windows-store.md)
 
-* [Xamarin.Forms](./xamarin-forms)
+* [Xamarin.Forms](./xamarin-forms.md)
 
-* [Xamarin.Android](./xamarin-android)
+* [Xamarin.Android](./xamarin-android.md)
 
-* [Xamarin.iOS](./xamarin-ios)
+* [Xamarin.iOS](./xamarin-ios.md)
 
-* [Windows Presentation Foundation](./windows-presentation-foundation)
+* [Windows Presentation Foundation](./windows-presentation-foundation.md)
 
-* [Windows Forms](./windows-forms)
+* [Windows Forms](./windows-forms.md)
 
-* [Avalonia UI](./avalonia)
+* [Avalonia UI](./avalonia.md)
 
 ## Types of Bindings
 
@@ -103,7 +103,7 @@ this.OneWayBind(ViewModel,
 
 ### Creating custom Value Converters classes
 
-You can also register converters globally and convert types for two-way bindings. See [Value Converters](./value-converters) page for details.
+You can also register converters globally and convert types for two-way bindings. See [Value Converters](./value-converters.md) page for details.
 
 ## Choosing when to update the source
 

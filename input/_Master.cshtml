@@ -13,8 +13,7 @@
     We <3 the people who are involved in this project, and we’d love
     to have you on board: https://reactiveui.net/contribute
     -->
-
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="description" content="@Context.String(DocsKeys.Description)" />
@@ -27,6 +26,8 @@
         <link href="@Context.GetLink("/assets/css/bootstrap/bootstrap.css")" rel="stylesheet" />
         <link href="@Context.GetLink("/assets/css/adminlte/AdminLTE.css")" rel="stylesheet" />
         <link href="@Context.GetLink("/assets/css/theme/theme.css")" rel="stylesheet" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="@Context.GetLink("/assets/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
         <link href="@Context.GetLink("/assets/css/override.css")" rel="stylesheet" />
         <script src="@Context.GetLink("/assets/js/jquery-2.2.3.min.js")"></script>
         <script src="@Context.GetLink("/assets/js/bootstrap.min.js")"></script>        
@@ -55,18 +56,23 @@
         <div class="wrapper @withContainer">
             <!-- Header -->
             <header class="main-header">   
-
-                @{
-                    if (Model.Bool(DocsKeys.ShowInNavbar, true))
-                    {
-                        <text>
-                            <a href="@Context.GetLink("/")" class="logo">
-                                <div class="logo-lg">
-                                    <img class="logo-image" src="@Context.GetLink("/assets/img/logo.png")" style="max-height: 60px" />
-                                    <span class="logo-caption">ReactiveUI</span>
-                                </div>
-                            </a>   
-                        </text>
+                     
+                <a href="@Context.GetLink("/")" class="logo">
+                    @{
+                        FilePath logo = Context.FilePath(DocsKeys.Logo);
+                        if(logo != null)
+                        {
+                            <text>
+                                <!-- mini logo for sidebar mini 50x50 pixels -->
+                                <span class="logo-mini"><img src="@Context.GetLink(logo)"></span>
+                                <!-- logo for regular state and mobile devices -->
+                                <span class="logo-lg"><img src="@Context.GetLink(logo)"></span>
+                            </text>
+                        }
+                        else
+                        {
+                            <span>@Context.String(DocsKeys.Title, "Docs")</span>
+                        }
                     }
                 }
                      

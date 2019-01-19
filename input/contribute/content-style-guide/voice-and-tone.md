@@ -30,8 +30,7 @@ ReactiveUI’s tone is usually informal, but it’s always more important to be 
 ReactiveUI has a sense of humor, so feel free to be funny when it’s appropriate and when it comes naturally to you. But don’t go out of your way to make a joke—forced humor can be worse than none at all. If you’re unsure, keep a straight face.
 
 # Style tips
-
-Here are a few key elements of writing ReactiveUI’s voice. For more, see the [Grammar and mechanics section](grammar-and-mechanics).
+Here are a few key elements of writing ReactiveUI’s voice. For more, see the [Grammar and mechanics section](./grammar-and-mechanics).
 
 * **Active voice** Use active voice. Avoid passive voice.
 * **Avoid slang and jargon** Write in plain English.

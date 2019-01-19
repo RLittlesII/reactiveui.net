@@ -11,17 +11,17 @@ public class ActivatableViewModel : ISupportsActivation
     {
         Activator = new ViewModelActivator();
         this.WhenActivated(disposables => 
-        {        
+        {
             // Use WhenActivated to execute logic
             // when the view model gets activated.
             this.HandleActivation();
-            
+
             // Or use WhenActivated to execute logic
             // when the view model gets deactivated.
             Disposable
                 .Create(() => this.HandleDeactivation())
                 .DisposeWith(disposables);
-        
+
             // Here we create a hot observable and 
             // subscribe to its notifications. The
             // subscription should be disposed when we'd 
@@ -31,7 +31,7 @@ public class ActivatableViewModel : ISupportsActivation
                 .Timer(interval, interval)
                 .Subscribe(x => { /* do smth every 5m */ })
                 .DisposeWith(disposables);
-                
+
             // We also can observe changes of a
             // property belonging to another ViewModel,
             // so we need to unsubscribe from that
@@ -42,9 +42,9 @@ public class ActivatableViewModel : ISupportsActivation
                 .DisposeWith(disposables);
         });
     }
-    
+
     private void HandleActivation() { }
-    
+
     private void HandleDeactivation() { }
 }
 ```
@@ -68,18 +68,18 @@ public class ActivatableControl : ReactiveUserControl<ActivatableViewModel>
     {
         this.InitializeComponent();
         this.WhenActivated(disposables =>
-        {   
+        {
             // If you put the WhenActivated block into your IViewFor
             // implementation constructor, the view model will also
             // get activated if it implements ISupportsActivation.
-        
+
             // Dispose bindings to prevent dependency property memory 
             // leaks that may occur on XAML based platforms. 
             this.Bind(ViewModel, vm => vm.UserName, v => v.Username.Text)
                 .DisposeWith(disposables);
             this.BindCommand(ViewModel, vm => vm.Login, v => v.Login)
                 .DisposeWith(disposables);
-                
+
             // Dispose WhenAny bindings to ensure we won't have memory
             // leaking here if the ViewModel outlives the View and vice 
             // versa.
@@ -177,7 +177,7 @@ public MyView()
                 .Subscribe()
                 .DisposeWith(disposables);
         });
-        
+
         // For other platforms it can be simplified to the following
         this.WhenAnyValue(x => x.ViewModel)
             .Where(x => x != null)

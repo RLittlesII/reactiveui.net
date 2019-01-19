@@ -76,7 +76,7 @@ public FeedsViewModel(IBlobCache cache = null)
 	Cache = cache ?? Locator.Current.GetService<IBlobCache>();
 }
 ```
- 
+
 
 ## Advanced
 Splat's dependency resolver, accessible using `Locator.Current` conceptually resembles the below:
